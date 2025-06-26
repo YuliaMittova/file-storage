@@ -1,0 +1,5 @@
+spring.data.mongodb.uri=mongodb://localhost:27017/filestorage
+spring.data.mongodb.database=storage
+spring.data.mongodb.auto-index-creation=true
+
+app.storage.upload-dir=/build/test-uploads
