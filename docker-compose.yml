@@ -3,7 +3,7 @@ services:
     image: mongo:4.4
     container_name: st_mongodb
     ports:
-      - $FILE_STORAGE_MONGO_DB_PORT:27017
+      - 27017:27017
 
   file-storage-service:
     build:
@@ -12,7 +12,7 @@ services:
     container_name: file-storage-service
     mem_limit: 1gb
     ports:
-      - $FILE_STORAGE_SERVICE_PORT:8080
+      - "8080:8080"
     depends_on:
       - mongo
     environment:

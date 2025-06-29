@@ -21,6 +21,7 @@ There are 2 ways how you can start the application:
 ![Local Intellij configuration](/documentation/application_config.png)
 * Start service in Docker by running the command:
 ```ssh
+./gradlew bootJar
 docker-compose up --build
 ```
 You can access API via Swagger link: http://localhost:8080/swagger-ui/index.html
