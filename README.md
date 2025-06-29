@@ -22,6 +22,12 @@ There are 2 ways how you can start the application:
 * Start service in Docker by running the command:
 ```ssh
 ./gradlew bootJar
-docker-compose up --build
+docker compose up --build
 ```
+
+To stop the service please use:
+```ssh
+ docker compose down
+```
+
 You can access API via Swagger link: http://localhost:8080/swagger-ui/index.html
